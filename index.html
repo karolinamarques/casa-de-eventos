@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karoshow eventos</title>
+  <link rel="stylesheet" href="css/homepage.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-content">
+        <a href="index.html">
+          <img class="logo" src="img/logo.jpeg" alt="Logomarca" />
+        </a>
+      </div>
+      <nav>
+        <div class="col-lg-8">
+          <ul class="menu d-flex">
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="formatura.html">Formaturas</a></li>
+              <li><a href="#">Datas Comemorativas</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Karoshow Eventos</h1>
+      <p class="slogan">Participe dos nossos próximos eventos.</p><br>
+
+      <section id="eventos">
+        <h2>Eventos marcados:</h2>
+        <ul>
+          <li>
+            <h3>10/12 - Formatura Ciência da Computação</h3>
+            <img src="img/formatura.jpg" alt="Foto de grupo de alunas celebrando a formatura" />
+            <br>
+            <a href="formatura.html">Clique para detalhes</a>
+          </li>
+          <li>
+            <h3>24/12 - Festa de Natal Beneficente</h3>
+            <img src="img/natal.jpeg" alt="Foto árvore de natal" />
+            <br>
+            <a href="natal.html">Clique para detalhes</a>
+          </li>
+          <li>
+            <h3>31/12 - Reveillon Karoshow</h3>
+            <img src="img/reveillon.jpg" alt="Foto do evento de reveillon" />
+            <br>
+            <a href="reveillon.html">Clique para detalhes</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="pesquisa">
+        <h2>Votação para bateria de escola de samba do Reveillon:</h2>
+        <div class="enquete">
+          <div class="resultados">
+            <h3>Resultados Parciais</h3>
+            <ol>
+              <li>Salgueiro (25%)</li>
+              <li>Mangueira (15%)</li>
+              <li>Portela(32%)</li>
+              <li>Mocidade(28%)</li>
+            </ol>
+          </div>
+          <div class="votacao">
+            <h3>Vote aqui!</h3>
+            <form action="#" method="get">
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="salgueiro" />
+                <label for="salgueiro">Salgueiro</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="mangueira" />
+                <label for="mangueira">Mangueira</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="portela" />
+                <label for="portela">Portela</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="mocidade" />
+                <label for="mocidade">Mocidade</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="outro" />
+                <label for="outro">Outro. Qual?</label>
+                <input type="text" name="outra_atração" placeholder="Digite qual bateria você quer" />
+              </div>
+              <input type="submit" class="btn-form" value="Votar" />
+            </form>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 | Site desenvolvido por Karolina Marques</p>
+    </div>
+  </footer>
+</body>
+
+</html>

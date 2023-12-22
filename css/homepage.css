@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif ;
+  background-color:#15d241;
+  color: #1F0049;
+}
+
+ul>li {
+  list-style-type: none;
+  margin-left: 30px;
+  
+}
+
+ol>li {
+  margin-left: 30px;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  display: block;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color:#437baf; 
+  padding: 10px 0;
+}
+
+header.container {
+  display: flex;
+}
+
+.logo {
+  height: 200px;
+  
+}
+
+nav {
+  width: 66,67; 
+}
+
+.menu {
+  display: flex;
+  padding-top: 50px; 
+  justify-content: end;
+  list-style-type: none;
+}
+
+
+.menu li a{
+  color: #040f18;
+}
+
+.menu li a:hover {
+  color: #0b2867;
+}
+
+
+main{
+  min-height: calc(100vh - 240px);
+}
+
+h1{
+  font-family: 'playfair Display', serif;
+  padding-top: 58px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #4a7599;
+}
+
+.slogan {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 2em; /* dobro da altura da fonte */
+  color: #4a7599;
+}
+
+
+
+#eventos h2
+#pesquisa h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  padding: 12px;
+  font-weight: 400;
+  color: #4a7599;
+}
+
+
+#eventos ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0 40px 0;
+}
+
+#eventos ul li {
+  width: 360px;
+  min-height: 320px;
+  background-color: #6add5f;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+
+#eventos ul li h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  padding: 15px 15px 0 15px;
+  font-weight: 300;
+  line-height: 150%; /* com porcentagem também funciona */
+}
+
+#eventos ul li img {
+  padding: 15px;
+  width: calc(100% - 30px); /* o calc serve para fazer calculos matemáticos de valores */
+  aspect-ratio: 16/9;
+}
+#eventos ul li a {
+  display: block;
+  margin: 15px;
+  width: calc(100% - 30px);
+  line-height: 36px;
+  height: 36px;
+  background-color: #484363;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#pesquisa .enquete {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 80px;
+}
+
+.resultados, .votacao {
+  width: 50%;
+  min-height: 200px;
+  background-color:  #6add5f;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.resultados h3, .votacao h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  padding: 15px 15px 0 15px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.resultados ol {
+  padding: 10px 0 0 10px; 
+}
+
+.resultados ol li {
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.votacao form {
+  padding-top: 10px;
+}
+
+.votacao input {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.votacao input[type="text"] {
+  font-size: 12px;
+  margin-left: 10px;
+  width: 250px;
+}
+
+.btn-form {
+  width: calc(100% - 60px);
+  margin: 10px 0 10px 0;
+  height: 36px;
+  background-color:#484363;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 18px;
+}
+
+footer {
+  width: 100%;
+  padding-top: 45px;
+  height: 75px;
+  background-color: #437baf;
+  color: #ffffff;
+  font-size: 1.25em;
+}
+
+
+.somente-mobile { display: none; }
+
+@media screen and (max-width: 480px) {
+  .somente-desktop { display: none !important; }
+  .somente-mobile { display: block; }
+  .container { width: 100vw; }
+  body {
+    width:100%;
+  }
+
+  #eventos ul {
+    display: block;
+    padding-top: 0px;
+  }
+  #eventos ul li {
+    width: calc(100% - 60px);
+    margin-bottom: 20px;
+  }
+  .enquete {
+    display: block !important;
+  }
+  .resultados,  .votacao {
+    margin-left: 30px;
+    width: calc(100% - 60px);
+    margin-bottom: 20px;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  main h1, main .slogan {
+    text-align: center;
+  }
+
+  .slogan {
+    font-size: 1.25em;
+    padding-top: 0;
+  }
+
+  #eventos h2, #pesquisa h2 {
+    padding-left: 30px;
+    color: #1F0049;
+  }
+
+  .votacao input[type="text"] {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 0.75em;
+  }
+}
